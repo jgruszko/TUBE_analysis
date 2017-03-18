@@ -1,0 +1,9 @@
+MCATree not found. Continue
+GATPostedDataTreeWriter_mjd:  this is GAT branch tube, commit 838c262
+Loading calibration map from file /projecta/projectdirs/majorana/data-projecta/TUBE/analysis/energyCal/calibrationMap.txt
+Info in <TAMSelector::FindLoader>: branch 'event' use loader TAMTreeBranchLoader
+Info in <TAMSelector::FindLoader>: branch 'run' use loader TAMTreeBranchLoader
+Warning in <GATMGTEventProcBase::GATEnergyCalibrationAscii::Process()>: Can't find offset for channel 114 for trapEMPZ in run 394
+Warning in <GATMGTEventProcBase::GATEnergyCalibrationAscii::Process()>: Can't find scale for channel 114 for trapEMPZ in run 394
+Warning at MGWFSlopeCalculator.cc:16 - Waveform has length < 2999. Setting slope to -15. Further messages will be suppressed.
+Warning at MGWFSlopeCalculator.cc:16 - Waveform has length < 2999. Setting slope to -15. Further messages will be suppressed.

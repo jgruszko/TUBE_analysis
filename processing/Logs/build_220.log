@@ -1,0 +1,5 @@
+Routine: (pid: 28983): majorcaroot.cc(359): Scanning input files to calculate run times...
+Error: (pid: 28983): /global/project/projectdirs/majorana/software/sl64/mjsw/mjsw20170125Prod/OrcaRoot/Processors/ORRunContext.cc(123): Switching to idle from non-stopping state 0
+Routine: (pid: 28983): majorcaroot.cc(378): Calculated run times: 
+run 0: 0 s; found 0 data packets.
+Error: (pid: 28983): majorcaroot.cc(385): Cannot access header XML. This is probably due to a corrupt file

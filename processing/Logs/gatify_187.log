@@ -1,0 +1,4 @@
+MCATree not found. Continue
+GATPostedDataTreeWriter_mjd:  this is GAT branch tube, commit 838c262
+Loading calibration map from file /projecta/projectdirs/majorana/data-projecta/TUBE/analysis/energyCal/calibrationMap.txt
+Info in <TAMSelector::FindLoader>: branch 'event' use loader TAMTreeBranchLoader

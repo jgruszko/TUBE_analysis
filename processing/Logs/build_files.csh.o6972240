@@ -1,0 +1,1 @@
+$MJORDIR/majorcaroot --sis --ignoreenabled $TUBEDIR/raw/Run$1 >& $TUBEDIR/analysis/processing/Logs/build_$1.log
