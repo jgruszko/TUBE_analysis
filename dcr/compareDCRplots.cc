@@ -20,10 +20,8 @@
   TH2D* hDCRPZCvE;
 
   TLegend* leg = new TLegend(.1, .1, .9, .9);
-  TCanvas *c1 = new TCanvas("c1", "c1", 800, 800);
-  c1->Divide(2, 2);
-  TCanvas* c2 = new TCanvas("c2", "c2", 1200, 400);
-  c2->Divide(3, 1);
+  TCanvas *c1 = new TCanvas("c1", "c1", 1200, 800);
+  c1->Divide(3, 2);
 
   for(int i = 0; i<3; i++){
     fName =  "$TUBEDIR/analysis/hists/DS";
@@ -31,73 +29,52 @@
     fName+=".root"; 
     fHist.Open(fName, "READ");
      
-    hAvg = (TH1D*) gDirectory->Get("hBlAvg");
-    hTransAvg = (TH1D*)  gDirectory->Get("hTransAvg");
+    hE = (TH1D*) gDirectory->Get("hE");
+    hDCR = (TH1D*) gDirectory->Get("hDCR");
+    hDCRPZC = (TH1D*) gDirectory->Get("hDCRPZC");
+    hDCRvE = (TH2D*) gDirectory->Get("hDCRvE");
+    hDCRPZCvE = (TH2D*) gDirectory->Get("hDCRPZCvE");
      
-    c1->cd(1);
 
-    hAvg->SetLineColor(colArr[i]);
+    hE->SetLineColor(colArr[i]);
+    hDCR->SetLineColor(colArr[i]);
+    hDCRPZC->SetLineColor(colArr[i]);
+    hDCRvE->SetMarkerColor(colArr[i]);
+    hDCRPZCvE->SetMarkerColor(colArr[i]);
     if(i == 0){
-      hAvg->GetYaxis()->SetRangeUser(-100, 2700);
-      hAvg->SetTitle("Average of 10 WFs");
-      hAvg->Draw("HIST");
-    }
-    else hAvg->Draw("SAME HIST");
-    
-    c1->cd(2);
-    hTransAvg->SetLineColor(colArr[i]);
-    if(i == 0){
-      hTransAvg->GetYaxis()->SetRangeUser(-100, 2700);
-      hTransAvg->SetTitle("Average of 10 PZ-Corrected WFs");
-      hTransAvg->Draw("HIST");
-    }
-    else hTransAvg->Draw("SAME HIST");
-    
-    c1->cd(3);
-    if(i == 0){
-      hNorm = (TH1D*)  gDirectory->Get("hNorm");
-    hNorm->SetLineColor(colArr[i]);
-      hNorm->GetYaxis()->SetRangeUser(0, 1.1);
-      hNorm->GetXaxis()->SetRangeUser(9000, 12000);
-      hNorm->SetTitle("Average of 10 Normalized PZ-Corrected WFs");
-      hNorm->GetYaxis()->SetTitle("Normalized ADC (arb)");
-      hNorm->DrawCopy("HIST");
-      c2->cd(1);
-      hNorm->DrawCopy("HIST");
+      c1->cd(1);
+      gPad->SetLogy();
+      hE->Draw("HIST");
+      c1->cd(2);
+      gPad->SetLogy();
+      hDCR->Draw("HIST");
+      c1->cd(3);
+      hDCRvE->Draw();
+      c1->cd(5);
+      gPad->SetLogy();
+      hDCRPZC->Draw("HIST");
+      c1->cd(6);
+      hDCRPZCvE->Draw();
     }
     else{
-      if(i==2)  hNorm = (TH1D*)  gDirectory->Get("hTrans4");
-      else hNorm = (TH1D*)  gDirectory->Get("hNorm");
-      hNorm->Scale(1./hNorm->At(hNorm->FindLastBinAbove(0)));
-      hNorm->SetLineColor(colArr[i]);
-      hNorm->DrawCopy("SAME HIST");
-      c2->cd(1);
-      hNorm->DrawCopy("SAME HIST");
-    }
-    
-    c2->cd(2);
-    if(i == 0){
-      hNorm->GetYaxis()->SetRangeUser(0, 1.1);
-      hNorm->GetXaxis()->SetRangeUser(9000, 12000);
-      hNorm->DrawCopy("HIST");
-    }
-    else hNorm->DrawCopy("HIST SAME");
-    
+      c1->cd(1);
+      hE->Draw("SAME HIST");
+      c1->cd(2);
+      hDCR->Draw("SAME HIST");
+      c1->cd(3);
+      hDCRvE->Draw("SAME");
+      c1->cd(5);
+      hDCRPZC->Draw("SAME HIST");
+      c1->cd(6);
+      hDCRPZCvE->Draw("SAME");
+    } 
 
     legStr.Form("DS %s, source %s mm from P-contact", dsArr[i].Data(), distArr[i].Data());
-    if(i == 5) leg->AddEntry(hAvg, "DS470_1, no alpha source", "L");
     else leg->AddEntry(hAvg, legStr, "L");
-    fWF.Close(); 
+    fHist.Close(); 
   }
   c1->cd(4);
   leg->Draw();
-  c2->cd(3);
-  leg->Draw();
-  //c1->Print("$TUBEDIR/analysis/wf/wfComparison_allDS.gif");
-  //c1->Print("$TUBEDIR/analysis/wf/normalizedWFComparison_allDS.gif");
-//  c1->Print("~/MondayMeeting/wfComparison_allDS.gif");
-//  c1->Print("~/MondayMeeting/normalizedWFComparison_allDS.gif");
-  
-  
+  c1->Print("$TUBEDIR/analysis/hists/compare_4DS.gif");
   
 }
