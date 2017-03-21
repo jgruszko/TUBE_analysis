@@ -1,31 +1,31 @@
 {
   gROOT->ProcessLine(".x $GATDIR/LoadGATClasses.C");
-  TString dsArr[6] = {"140_1"};
-  TString liveT[6] = {24.0};
+  TString ds[20] = {"120_0", "130_0", "140_0", "140_1", "150_0", "150_1", "160_0", "160_1", "170_0", "180_0", "190_0", "190_1", "200_0", "210_0", "210_1", "210_2", "210_3", "470_0", "470_1", "470_2"};
+  double liveT[20] = {24.516, 26.021, 21.015, 22.333, 20.910, 25.778, 5.378, 24.365, 19.093, 21.820, 31.004, 15.201, 21.014, 25.016, 25.016, 24.019, 19.675, 3.543, 22.688, 26.293};
  
   TString fName;
-  TH1D* hE[6];
-  TH1D* hDCR[6];
-  TH1D* hDCRPZC[6];
-  TH2D* hDCRvE[6];
-  TH2D* hDCRPZCvE[6];
+  TH1D* hE[20];
+  TH1D* hDCR[20];
+  TH1D* hDCRPZC[20];
+  TH2D* hDCRvE[20];
+  TH2D* hDCRPZCvE[20];
 
   TString selection = "channel == 112 && mClean == 1 && avse>0 && nX<2";
   TString energySel = "&& trapEMPZCal>100 && trapEMPZCal<6000";
-  for(int i = 0; i<6; i++){
+  for(int i = 0; i<20; i++){
     cout<<"Opening file "<<i<<endl; 
     TString fName = "$TUBEDIR/data/skim/skimDS";
-    fName += ds;
+    fName += ds[i];
     fName+=".root"; 
     TChain* skimTree = new TChain("skimTree");
     skimTree->AddFile(fName);
     
     fName =  "$TUBEDIR/analysis/hists/DS";
-    fName += ds;
+    fName += ds[i];
     fName+=".root"; 
     
     TFile* fOut = new TFile(fName, "UPDATE");
-
+  
     //plot 1: Energy
     cout<<"Drawing plot 1"<<endl;
     selection = "channel == 112 && mClean == 1 && avse>0 && nX<2";
@@ -48,17 +48,18 @@
     hDCR[i]->GetXaxis()->SetTitle("DCR (ADC/ns)");
     hDCR[i]->GetYaxis()->SetTitle("Counts/hr");
 
+
     //plot 3: DCRvE
     cout<<"Drawing plot 3"<<endl;
     energySel = "&& trapEMPZCal>500 && trapEMPZCal<6000";
-    skimTree->Draw("dcr90:trapEMPZCal>>histDCRvE(5500, 500, 1000, 1000, -.01, .02)", selection+energySel);
+    skimTree->Draw("dcr90:trapEMPZCal>>histDCRvE(5500, 500, 6000, 1000, -.01, .02)", selection+energySel);
     hDCRvE[i] = (TH2D*) gDirectory->Get("histDCRvE");
     hDCRvE[i]->SetTitle("DCR vs. E");
     hDCRvE[i]->GetXaxis()->SetTitle("Energy (keV)");
     hDCRvE[i]->GetYaxis()->SetTitle("DCR (ADC/ns)");
 
     //plot 4: DCRPZC
-    cout<<"Drawing plot 5"<<endl;
+    cout<<"Drawing plot 4"<<endl;
     energySel = "&& trapEMPZCal>1000 && trapEMPZCal<6000";
     skimTree->Draw("dcrpzc90>>histDCRPZC(1000, -.01, .02)", selection+energySel);
     hDCRPZC[i] = (TH1D*) gDirectory->Get("histDCRPZC");
@@ -70,7 +71,7 @@
     //plot 5: DCRPZCvE
     cout<<"Drawing plot 5"<<endl;
     energySel = "&& trapEMPZCal>500 && trapEMPZCal<6000";
-    skimTree->Draw("dcrpzc90:trapEMPZCal>>histDCRPZCvE(5500, 500, 1000, 1000, -.01, .02)", selection+energySel);
+    skimTree->Draw("dcrpzc90:trapEMPZCal>>histDCRPZCvE(5500, 500, 6000, 1000, -.01, .02)", selection+energySel);
     hDCRPZCvE[i] = (TH2D*) gDirectory->Get("histDCRPZCvE");
     hDCRPZCvE[i]->SetTitle("DCRPZC vs. E");
     hDCRPZCvE[i]->GetXaxis()->SetTitle("Energy (keV)");
@@ -85,5 +86,5 @@
     hDCRPZCvE[i]->Write("hDCRPZCvE");
     
     fOut->Close();
- 
+  } 
 } 

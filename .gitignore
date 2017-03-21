@@ -1,0 +1,7 @@
+*.o
+*.so
+*.log
+*csh.o*
+*csh.e*
+*core*
+
