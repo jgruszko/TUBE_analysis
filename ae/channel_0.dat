@@ -1,0 +1,133 @@
+#This is a basic configuration file for the analysis modules
+#Lines containing # are ignored (does not have to start with #!!!)
+#The name of the parameters are specified before the colon (:)
+#White spaces are ignored
+#If a parameter is meant to take several values (e.g. a vector), then the different values should be seperated by a comma (,)
+#Add any available parameters to this default config file so that there is an easy reference
+#If a parameter is only used by a specific analysis module, include the name of the module into the parameter name
+
+#Choose which modules to run
+modules : mjd_psa_analysis_calibrated
+
+#The standard mjd directory structure is assumed.
+#Specify each directory with full path if it's not under the standard mjd dir!
+
+#mjd_dir: /project/projectdirs/majorana/data/mjd/
+mjd_dir: /global/projecta/projectdirs/majorana/data-projecta/
+
+#If this is specified, then the output will go under this directory instead of mjd_dir, still following the same structure:
+#mjd_output_dir: /eliza10/majorana/scratch/chan112
+mjd_output_dir: ./chan0/
+
+#The data type is ortec, surfacc, STC, etc. It must correspond to the directory name
+datatype: TUBE
+
+#Dataset/detector (corresponds to the subdirectory for input and output based on above)
+detector: ae 
+
+#names of gatified files
+gatfilename: mjd_run
+#gatfilename: mjd_skim_P3END_Th228_
+
+#name of the TTree in the gatified output
+gattreename: mjdTree
+
+#names of mca muchancarootfiles
+muchancarootfilename: OR_run
+#muchancarootfilename: OR_skim_P3END_Th228_
+
+#name of the tree with the MCA spectrum
+muchancarootreename: MCATree
+
+#runs to process (-1 will ignore these and run on all runs in the directory)
+startrun: 73
+#endrun: 3690
+endrun: 117
+#startrun: 1
+#endrun: 2
+
+#channels to use (comment out to use all)
+Channels: 112
+#Bad runs, do not load these (used by GATCalibrationMap)
+#badRuns: 3689, 3691, 3693, 3695, 3697, 3699, 3701, 3703, 3705, 3707, 3709, 3711, 3713, 3715, 3717, 3719, 3721, 3723, 3725, 3727, 3729, 3731, 3733, 3735, 3737, 3739, 3741, 3743, 3745, 3747, 3749, 3751, 3753, 3755, 3757, 3759, 3761, 3763, 3765, 3767, 3769, 3771, 3773, 3775, 3777, 3779, 3781, 3783, 3785, 3787, 3789, 3791, 3793, 3795, 3797, 3799, 3801, 3803, 3805, 3807, 3809, 3811, 3813, 3815, 3817, 3819, 3821, 3823, 3825, 3827, 3829, 3831, 3833, 3835, 3837, 3839, 3841, 3843, 3845, 3847, 3849, 3851, 3853, 3855, 3857, 3859, 3861, 3863, 3865, 3867, 3869, 3871, 3873, 3875, 3877, 3879, 3881, 3883, 3885, 3887, 3889, 3891, 3893, 3895, 3897, 3899, 3901, 3903  
+#badRuns: 3689, 3691, 3693, 3695, 3697, 3699, 3701, 3703, 3705, 3707, 3709, 3711, 3713, 3715, 3717, 3719, 3721, 3723, 3725, 3727, 3729, 3731, 3733, 3735
+#badRuns: 3689
+
+#Peaks to use for calibration, by GATCalibrateSpectrum
+#High Energy: 583.187, 727.2, 911.1, 1173.228, 1332.492, 1460.822, 2614.7
+#Barium: 80.998, 276.399, 302.851, 356.013, 383.849
+CalibrationPeakskeV: 510.77, 583.187, 2614.511 
+#Guesses in ADC for the above peaks
+CalibrationPeaksGuesses: 379, 433, 1940
+#When using guesses, the number of bins centered around the guess to search for the peaks. If there are less bin widths, the last one is used to fill the missing ones.
+#CalibrationWidth: 100000, 100000
+#Fraction of the largest peak to use as a threshold to find a peak
+CalibrationPeakskeV_peakThreshold: 0.1
+#Min and max value of ADC to draw in the histogram for energy calibration
+CalibrationEminADC:0
+CalibrationEmaxADC:-1
+
+######################################################################################################
+###
+### Parameters for specific modules below ############################################################
+###
+######################################################################################################
+
+
+
+################################################
+###    Module mjd_calibrate_and_fit_run    #####
+################################################
+#The energies to use for the run by run calibrations
+mjd_calibrate_and_fit_run_EnergyName: energy, trap500nsMax , trap1usMax,  trap2usMax, trap4usMax, trap8usMax
+
+#The peaks to fit to save in the meanfwhmkeV.dat file
+mjd_calibrate_and_fit_run_PeaksToFit: 583.187, 2614.511
+
+
+################################################
+###mjd_get_event_rate_by_run               #####
+################################################
+#Gets the event rate in a certain, calibrated energy range. Give several energy ranges if desired [Emin[i]-Emax[i]]
+
+#mjd_get_event_rate_by_run_Emin:0, 1500
+#mjd_get_event_rate_by_run_Emax:3000, 3000
+mjd_get_event_rate_by_run_ename: energy
+
+
+
+
+################################################
+###    Module mjd_plot_run_by_run_energy   #####
+################################################
+
+#The peaks to plot, must be present within mjd_calibrate_and_fit_run_PeaksToFit
+#these do not need to have decimals, +/-1 keV
+mjd_plot_run_by_run_energy_PeaksToPlot: 583,  2614
+
+
+
+
+################################################
+###    Module  mjd_energy_analysis         #####
+################################################
+
+#Peaks to fit in the energy analysis:
+mjd_energy_analysis_PeaksToFit: 583.187, 2614.511 
+
+#Energy of peak to use for determining the best energy estimator
+mjd_energy_analysis_ReferenceEnergy: 2614.5
+
+#Force this energy to be in the skim file:
+#mjd_energy_analysis_ForceSkimEnergy: ByRunCal
+
+################################################
+###    Module  mjd_psa_analysis            #####
+################################################
+
+#Current estimators to use for PSA
+#mjd_psa_analysis_CurrentNames: TSCurrent50nsMax, TSCurrent100nsMax, TSCurrent150nsMax, TSCurrent200nsMax, rcDeriv50nsMax, rcDeriv100nsMax, rcDeriv150nsMax, rcDeriv200nsMax, trirt50nsft0nsMax, trirt50nsft10nsMax, trirt50nsft20nsMax, trirt100nsft0nsMax, trirt100nsft10nsMax, trirt100nsft20nsMax, trirt200nsft0nsMax, trirt200nsft10nsMax, trirt200nsft20nsMax, trirt500nsft0nsMax, trirt500nsft10nsMax, trirt500nsft20nsMax, trirt1usft0nsMax, trirt1usft10nsMax, trirt1usft20nsMax  
+
+mjd_psa_analysis_CurrentNames: TSCurrent200Max   
+
+#mjd_psa_analysis_CurrentNames: TSCurrent50nsMax

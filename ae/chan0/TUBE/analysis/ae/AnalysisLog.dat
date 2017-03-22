@@ -1,0 +1,287 @@
+Analysis Started At: 2017-03-21-19:24:07
+config file: channel_0.dat
+Start run is 73
+End run is 117
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run73.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run74.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run75.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run76.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run77.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run78.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run79.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run80.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run81.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run82.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run83.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run84.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run85.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run86.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run87.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run88.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run89.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run90.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run91.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run92.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run93.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run94.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run95.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run96.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run97.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run98.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run99.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run100.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run101.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run102.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run103.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run104.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run105.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run106.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run107.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run108.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run109.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run110.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run111.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run112.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run113.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run114.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run115.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run116.root
+Now Loading /projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/mjd_run117.root
+Number of runs is 45
+Number of channels is 1
+Available channels:
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+112 has 10600568.000000 entries
+Loading calibration map from /global/projecta/projectdirs/majorana/data-projecta/TUBE/analysis/energyCal/calibrationMap.txt
+Now running on Channel 112
+
+
+******* Now doing the energy dependance of AvsE for chan 112 and TSCurrent200Max
+
+****************************************
+Minimizer is Minuit / MigradImproved
+Chi2                      =    0.0106493
+NDf                       =           19
+Edm                       =  6.67871e-18
+NCalls                    =           89
+p0                        =    0.0351988   +/-   0.0202941   
+p1                        =   0.00424571   +/-   3.6457e-05  
+p2                        = -1.09541e-07   +/-   1.402e-08   
+The corrected AvsE value was found to be (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))
+Optimizing the range for the PSA cut
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.113921392456975079 depeff = 0.84641
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.206935509945936569 depeff = 0.899836
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.299949627434898058 depeff = 0.922453
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.392963744923859548 depeff = 0.933922
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.485977862412821038 depeff = 0.943942
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.578991979901782527 depeff = 0.949932
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.672006097390744017 depeff = 0.95345
+found mininum of range at -0.76502
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.299949627434898114 depeff = 0.922453
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.206935509945936624 depeff = 0.899836
+With (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal))>-0.113921392456975121 depeff = 0.84641
+found maximum of range at -0.0209073
+Cut = -0.76502 DEP = 0.956486 SEP = 0.218165 NBB = 0.650315
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10651 DEPCutB = 6995 DEPCut = 8902.25 tau = 4
+depeff = 0.956486 depefferr = 0.00392063
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 5240 SEPCutB = 8044 SEPCut = 3229 tau = 4
+sepeff = 0.218165 sepefferr = 0.00434322
+Cut = -0.735256 DEP = 0.955062 SEP = 0.208976 NBB = 0.643463
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10622 DEPCutB = 6932 DEPCut = 8889 tau = 4
+depeff = 0.955062 depefferr = 0.00396087
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 5080 SEPCutB = 7948 SEPCut = 3093 tau = 4
+sepeff = 0.208976 sepefferr = 0.00430897
+Cut = -0.705491 DEP = 0.953692 SEP = 0.199652 NBB = 0.636466
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10594 DEPCutB = 6871 DEPCut = 8876.25 tau = 4
+depeff = 0.953692 depefferr = 0.00399918
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4919 SEPCutB = 7856 SEPCut = 2955 tau = 4
+sepeff = 0.199652 sepefferr = 0.00427289
+Cut = -0.675727 DEP = 0.953558 SEP = 0.191511 NBB = 0.628979
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10578 DEPCutB = 6812 DEPCut = 8875 tau = 4
+depeff = 0.953558 depefferr = 0.00402452
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4774 SEPCutB = 7758 SEPCut = 2834.5 tau = 4
+sepeff = 0.191511 sepefferr = 0.004238
+Cut = -0.645962 DEP = 0.952403 SEP = 0.182288 NBB = 0.621637
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10547 DEPCutB = 6731 DEPCut = 8864.25 tau = 4
+depeff = 0.952403 depefferr = 0.00406801
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4616 SEPCutB = 7672 SEPCut = 2698 tau = 4
+sepeff = 0.182288 sepefferr = 0.00419923
+Cut = -0.616198 DEP = 0.950898 SEP = 0.174687 NBB = 0.613534
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10517 DEPCutB = 6667 DEPCut = 8850.25 tau = 4
+depeff = 0.950898 depefferr = 0.00410728
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4477 SEPCutB = 7566 SEPCut = 2585.5 tau = 4
+sepeff = 0.174687 sepefferr = 0.00416192
+Cut = -0.586433 DEP = 0.950442 SEP = 0.167593 NBB = 0.60554
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10497 DEPCutB = 6604 DEPCut = 8846 tau = 4
+depeff = 0.950442 depefferr = 0.00413624
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4346 SEPCutB = 7462 SEPCut = 2480.5 tau = 4
+sepeff = 0.167593 sepefferr = 0.0041251
+Cut = -0.556669 DEP = 0.948347 SEP = 0.160313 NBB = 0.597564
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10458 DEPCutB = 6526 DEPCut = 8826.5 tau = 4
+depeff = 0.948347 depefferr = 0.00418513
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4209 SEPCutB = 7345 SEPCut = 2372.75 tau = 4
+sepeff = 0.160313 sepefferr = 0.00408457
+Cut = -0.526904 DEP = 0.947353 SEP = 0.154181 NBB = 0.589442
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10425 DEPCutB = 6431 DEPCut = 8817.25 tau = 4
+depeff = 0.947353 depefferr = 0.00423019
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 4094 SEPCutB = 7248 SEPCut = 2282 tau = 4
+sepeff = 0.154181 sepefferr = 0.00404935
+Cut = -0.49714 DEP = 0.944344 SEP = 0.147813 NBB = 0.580886
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10379 DEPCutB = 6359 DEPCut = 8789.25 tau = 4
+depeff = 0.944344 depefferr = 0.00428276
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3975 SEPCutB = 7149 SEPCut = 2187.75 tau = 4
+sepeff = 0.147813 sepefferr = 0.00401173
+Cut = -0.467375 DEP = 0.942088 SEP = 0.141327 NBB = 0.572402
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10343 DEPCutB = 6299 DEPCut = 8768.25 tau = 4
+depeff = 0.942088 depefferr = 0.00432365
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3852 SEPCutB = 7041 SEPCut = 2091.75 tau = 4
+sepeff = 0.141327 sepefferr = 0.00397113
+Cut = -0.437611 DEP = 0.939402 SEP = 0.136716 NBB = 0.563792
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10295 DEPCutB = 6207 DEPCut = 8743.25 tau = 4
+depeff = 0.939402 depefferr = 0.00437888
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3754 SEPCutB = 6922 SEPCut = 2023.5 tau = 4
+sepeff = 0.136716 sepefferr = 0.00393583
+Cut = -0.407846 DEP = 0.936044 SEP = 0.130466 NBB = 0.554619
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10240 DEPCutB = 6112 DEPCut = 8712 tau = 4
+depeff = 0.936044 depefferr = 0.00443915
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3633 SEPCutB = 6808 SEPCut = 1931 tau = 4
+sepeff = 0.130466 sepefferr = 0.00389282
+Cut = -0.378081 DEP = 0.932794 SEP = 0.125163 NBB = 0.545229
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10188 DEPCutB = 6025 DEPCut = 8681.75 tau = 4
+depeff = 0.932794 depefferr = 0.00449435
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3526 SEPCutB = 6694 SEPCut = 1852.5 tau = 4
+sepeff = 0.125163 sepefferr = 0.00385274
+Cut = -0.348317 DEP = 0.92941 SEP = 0.120855 NBB = 0.53515
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10132 DEPCutB = 5927 DEPCut = 8650.25 tau = 4
+depeff = 0.92941 depefferr = 0.00455298
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3426 SEPCutB = 6549 SEPCut = 1788.75 tau = 4
+sepeff = 0.120855 sepefferr = 0.00381185
+Cut = -0.318552 DEP = 0.925649 SEP = 0.115619 NBB = 0.524146
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 10070 DEPCutB = 5819 DEPCut = 8615.25 tau = 4
+depeff = 0.925649 depefferr = 0.00461615
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3316 SEPCutB = 6419 SEPCut = 1711.25 tau = 4
+sepeff = 0.115619 sepefferr = 0.00376732
+Cut = -0.288788 DEP = 0.920143 SEP = 0.110231 NBB = 0.513668
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9992 DEPCutB = 5712 DEPCut = 8564 tau = 4
+depeff = 0.920143 depefferr = 0.00468911
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3200 SEPCutB = 6274 SEPCut = 1631.5 tau = 4
+sepeff = 0.110231 sepefferr = 0.00371833
+Cut = -0.259023 DEP = 0.914475 SEP = 0.104724 NBB = 0.502375
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9914 DEPCutB = 5611 DEPCut = 8511.25 tau = 4
+depeff = 0.914475 depefferr = 0.00475877
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 3086 SEPCutB = 6144 SEPCut = 1550 tau = 4
+sepeff = 0.104724 sepefferr = 0.00366936
+Cut = -0.229259 DEP = 0.907277 SEP = 0.0996571 NBB = 0.490646
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9818 DEPCutB = 5495 DEPCut = 8444.25 tau = 4
+depeff = 0.907277 depefferr = 0.00484017
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2978 SEPCutB = 6012 SEPCut = 1475 tau = 4
+sepeff = 0.0996571 sepefferr = 0.0036209
+Cut = -0.199494 DEP = 0.898332 SEP = 0.0942013 NBB = 0.476869
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9700 DEPCutB = 5356 DEPCut = 8361 tau = 4
+depeff = 0.898332 depefferr = 0.00493523
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2860 SEPCutB = 5863 SEPCut = 1394.25 tau = 4
+sepeff = 0.0942013 sepefferr = 0.00356588
+Cut = -0.16973 DEP = 0.883612 SEP = 0.0893367 NBB = 0.463744
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9528 DEPCutB = 5216 DEPCut = 8224 tau = 4
+depeff = 0.883612 depefferr = 0.00505731
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2751 SEPCutB = 5715 SEPCut = 1322.25 tau = 4
+sepeff = 0.0893367 sepefferr = 0.00351266
+Cut = -0.139965 DEP = 0.867093 SEP = 0.0851815 NBB = 0.449351
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9332 DEPCutB = 5047 DEPCut = 8070.25 tau = 4
+depeff = 0.867093 depefferr = 0.00518703
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2648 SEPCutB = 5549 SEPCut = 1260.75 tau = 4
+sepeff = 0.0851815 sepefferr = 0.00345905
+Cut = -0.110201 DEP = 0.84265 SEP = 0.0808405 NBB = 0.434468
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 9051 DEPCutB = 4833 DEPCut = 7842.75 tau = 4
+depeff = 0.84265 depefferr = 0.00535146
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2539 SEPCutB = 5370 SEPCut = 1196.5 tau = 4
+sepeff = 0.0808405 sepefferr = 0.00340028
+Cut = -0.0804363 DEP = 0.814687 SEP = 0.0761617 NBB = 0.418389
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 8731 DEPCutB = 4594 DEPCut = 7582.5 tau = 4
+depeff = 0.814687 depefferr = 0.00551466
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2426 SEPCutB = 5195 SEPCut = 1127.25 tau = 4
+sepeff = 0.0761617 sepefferr = 0.00333797
+Cut = -0.0506718 DEP = 0.782025 SEP = 0.0696924 NBB = 0.403089
+DEPUncutS = 11878 DEPUncutB = 10283 DEPUncut = 9307.25 tau = 4
+DEPCutS = 8367 DEPCutB = 4354 DEPCut = 7278.5 tau = 4
+depeff = 0.782025 depefferr = 0.00566939
+SEPUncutS = 18008 SEPUncutB = 12829 SEPUncut = 14800.8 tau = 4
+SEPCutS = 2279 SEPCutB = 4990 SEPCut = 1031.5 tau = 4
+sepeff = 0.0696924 sepefferr = 0.0032551
+The best cut was found to be at (TSCurrent200Max*(trapEMPZCal)/(trapEMPZ))-(0.03519878872569)-(0.00424570699906*(trapEMPZCal))-(-0.00000010954076*(trapEMPZCal)*(trapEMPZCal)) = -0.199494
+DEP = 0.898332 +/- 0.00493523
+SEP = 0.0942013 +/- 0.00356588
+0nbb Continuum = 0.476869 +/- 0.00294016
+CorrectedAdepmax: 0.03
+CorrectedAnbbmax: 0.01
+CorrectedAdiff: 0.02
+cutvalue2: -0.199494
+depdiff_pos: 0.01061
+depeff: 0.898332
+depeff_nbbpos: 0.887722
+depdiff_neg: 0.00537216
+depeff: 0.898332
+depeff_nbbneg: 0.903704
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_MeanAvsE.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_CorrectedA.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_CorrectedAvsE2.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_CorrectedAvsE2_DEP.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_AvsE.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_EnergyPSA.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_EnergyPSA_SEP.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_EnergyPSA_DEP.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_PSAEffVsCut.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_avsevsE.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_avse.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_avsevsE_DEP.pdf has been created
+Info in <TCanvas::Print>: pdf file ./chan0/TUBE/analysis/ae/mjd_psa_analysis_calibrated/Chan112_TSCurrent200Max_CorrectedAdep.pdf has been created
+For channel112the best reduction in the continuum at 2039 (NBB) is0.476869+/-0.00294016achieved with the current estimatorTSCurrent200Max
+Analysis Ended At: 2017-03-22-03:12:10
