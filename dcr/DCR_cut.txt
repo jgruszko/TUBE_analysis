@@ -1,0 +1,4 @@
+112    1          0.00995106                                    blrwfSlope-(1.758291E-06+trapEMPZCal*-1.312866E-05)-2.909348E-04
+112    1           0.0100256                                                                          blrpzcwfSlope-2.077002E-04
+112    1           0.0999774                                    blrwfSlope-(1.758291E-06+trapEMPZCal*-1.312866E-05)-1.035585E-04
+112    1           0.0999095                                                                          blrpzcwfSlope-1.098255E-04

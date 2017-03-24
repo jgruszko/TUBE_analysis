@@ -1,10 +1,10 @@
 {
-  const char* histfile = "./hist_938_955.root";
+  const char* histfile = "./hist_1630_1638.root";
   const char* histname = "trapEMPZ";
   const char* templatefile = "FitTemplates.root";
   //const char* templatename = "fitHighStats";
   const char* templatename = "fitNormal_noTails";
-  const char* outputfile = "fitResults_noTails_938_955.root";
+  const char* outputfile = "fitResults_noTails_1630_1638.root";
   double Elow_2614 = 1920;
   double Ehigh_2614 = 1945;
   //double Elow_2614 = 12600;
@@ -66,9 +66,9 @@
 
 	//Write calibration params to ascii file.
 	GATCalibrationMapAscii calMap;
-	calMap.AddEntryToVectors(112, histname, 938, 10000);
-	calMap.SetScale(112, histname, 938, 10000, cal1);
-	calMap.SetOffset(112, histname, 938, 10000, cal0);
+	calMap.AddEntryToVectors(112, histname, 1630, 1638);
+	calMap.SetScale(112, histname, 1630, 1638, cal1);
+	calMap.SetOffset(112, histname, 1630, 1638, cal0);
 	calMap.WriteCalibrationMapToTextFile("/global/projecta/projectdirs/majorana/data-projecta/TUBE/analysis/energyCal/calibrationMap.txt", std::ios_base::app);
 
 

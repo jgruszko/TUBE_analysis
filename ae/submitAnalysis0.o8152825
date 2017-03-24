@@ -1,0 +1,37 @@
+Loading channel_0.dat
+Loaded modules --> ['mjd_psa_analysis_calibrated']
+Loaded mjd_dir --> ['/global/projecta/projectdirs/majorana/data-projecta/']
+Loaded mjd_output_dir --> ['./chan0/']
+Loaded datatype --> ['TUBE']
+Loaded detector --> ['ae']
+Loaded gatfilename --> ['mjd_run']
+Loaded gattreename --> ['mjdTree']
+Loaded muchancarootfilename --> ['OR_run']
+Loaded muchancarootreename --> ['MCATree']
+Loaded startrun --> ['73']
+Loaded endrun --> ['117']
+Loaded Channels --> ['112']
+Loaded CalibrationPeakskeV --> ['510.77', '583.187', '2614.511']
+Loaded CalibrationPeaksGuesses --> ['379', '433', '1940']
+Loaded CalibrationPeakskeV_peakThreshold --> ['0.1']
+Loaded CalibrationEminADC --> ['0']
+Loaded CalibrationEmaxADC --> ['-1']
+Loaded mjd_calibrate_and_fit_run_EnergyName --> ['energy', 'trap500nsMax', 'trap1usMax', 'trap2usMax', 'trap4usMax', 'trap8usMax']
+Loaded mjd_calibrate_and_fit_run_PeaksToFit --> ['583.187', '2614.511']
+Loaded mjd_get_event_rate_by_run_ename --> ['energy']
+Loaded mjd_plot_run_by_run_energy_PeaksToPlot --> ['583', '2614']
+Loaded mjd_energy_analysis_PeaksToFit --> ['583.187', '2614.511']
+Loaded mjd_energy_analysis_ReferenceEnergy --> ['2614.5']
+Loaded mjd_psa_analysis_CurrentNames --> ['TSCurrent200Max']
+
+
+Starting the analysis
+Input dirs:
+   gat_dir: /global/projecta/projectdirs/majorana/data-projecta/TUBE/data/gatified/
+   mca_dir: /global/projecta/projectdirs/majorana/data-projecta/TUBE/data/mcaroot/
+Output dirs:
+   outputdir: ./chan0/TUBE/analysis/ae/
+***************************************
+
+
+Running module : mjd_psa_analysis_calibrated

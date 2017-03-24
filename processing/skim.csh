@@ -20,3 +20,6 @@ source ~/.cshrc
 cd $TUBEDIR/data/skim
 
 $GATDIR/Apps/skim_tube_data 170 0 >& $TUBEDIR/analysis/processing/Logs/skim_170_0.log
+$GATDIR/Apps/skim_tube_data 180 0 >& $TUBEDIR/analysis/processing/Logs/skim_180_0.log
+$GATDIR/Apps/skim_tube_data 190 0 >& $TUBEDIR/analysis/processing/Logs/skim_190_0.log
+$GATDIR/Apps/skim_tube_data 190 1 >& $TUBEDIR/analysis/processing/Logs/skim_190_1.log

@@ -19,6 +19,9 @@
 source ~/.cshrc
 cd $TUBEDIR/data/skim
 
-$GATDIR/Apps/skim_tube_data 180 0 >& $TUBEDIR/analysis/processing/Logs/skim_180_0.log
+$GATDIR/Apps/skim_tube_data 100 0 >& $TUBEDIR/analysis/processing/Logs/skim_100_0.log
+$GATDIR/Apps/skim_tube_data 110 0 >& $TUBEDIR/analysis/processing/Logs/skim_110_0.log
+$GATDIR/Apps/skim_tube_data 120 0 >& $TUBEDIR/analysis/processing/Logs/skim_120_0.log
+$GATDIR/Apps/skim_tube_data 130 0 >& $TUBEDIR/analysis/processing/Logs/skim_130_0.log
 
 

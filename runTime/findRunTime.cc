@@ -1,6 +1,6 @@
 {
   gROOT->ProcessLine(".x $GATDIR/LoadGATClasses.C");
-  TString fName = "$TUBEDIR/data/skim/skimDS170_0.root";
+  TString fName = "$TUBEDIR/data/skim/skimDS70_1.root";
   TChain* skimTree = new TChain("skimTree", "");
   skimTree->AddFile(fName);
   
